@@ -13,9 +13,9 @@ The gridworld MDP is shown below.
 
 The single terminal state (1, 3) has a reward of +10, the non-terminal (1, 2) has reward -5, and all other states 
 have a reward of -1. 
-The agent makes its intended move (up, down, left, or right) with a probability 0.8, and moves in 
-a perpendicular direction with probability 0.1 for each side (e.g., if intending to go right, the agent can move 
-up or down with a probability of 0.1 each). If the agent runs into a wall, it stays in the same place.
+The agent makes its intended move (up, down, left, or right) with a probability 0.8, and moves in a perpendicular 
+direction with probability 0.1 for each side (e.g., if intending to go right, the agent can move up or down with 
+a probability of 0.1 each). If the agent runs into a wall, it stays in the same place.
 </pre>
 <div>
 The goal in a Markov decision process is to find a good "policy" for the decision maker: a function π that specifies the action π(s) that the decision maker will choose when in state s. Once a Markov decision process is combined with a policy in this way, this fixes the action for each state and the resulting combination behaves like a Markov chain (since the action chosen in state s is completely determined by π(s) and <img src="https://latex.codecogs.com/png.image?\inline&space;\dpi{110}\bg{white}Pr(s_{t&plus;1}&space;=&space;s'&space;|&space;s_{t}&space;=&space;s,&space;a_{t}&space;=&space;t&space;)&space;" title="https://latex.codecogs.com/png.image?\inline \dpi{110}\bg{white}Pr(s_{t+1} = s' | s_{t} = s, a_{t} = t ) " /> reduces to <img src="https://latex.codecogs.com/png.image?\inline&space;\dpi{110}\bg{white}Pr(s_{t&plus;1}&space;=&space;s'&space;|&space;s_{t}&space;=&space;s)&space;" title="https://latex.codecogs.com/png.image?\inline \dpi{110}\bg{white}Pr(s_{t+1} = s' | s_{t} = s) " /> a Markov transition matrix).
