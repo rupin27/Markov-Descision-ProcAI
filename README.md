@@ -24,6 +24,7 @@ The objective is to choose a policy π that will maximize some cumulative functi
 
 <img src="https://latex.codecogs.com/png.image?\inline&space;\dpi{110}\bg{white}E[\sum_{t&space;=&space;0}^{\infty&space;}\gamma&space;^{t}R_{a_{t}}(s_{t},&space;s)]&space;" title="https://latex.codecogs.com/png.image?\inline \dpi{110}\bg{white}E[\sum_{t = 0}^{\infty }\gamma ^{t}R_{a_{t}}(s_{t}, s)] " /> (where we choose <img src="https://latex.codecogs.com/png.image?\inline&space;\dpi{110}\bg{white}a(t)&space;=&space;\pi&space;(s_{t})&space;" title="https://latex.codecogs.com/png.image?\inline \dpi{110}\bg{white}a(t) = \pi (s_{t}) " /> i.e. actions given by the policy). And the expectation is taken over <img src="https://latex.codecogs.com/png.image?\inline&space;\dpi{110}\bg{white}&space;s_{t&plus;1}\sim&space;P_{a_{t}}(s_{t},&space;s_{t&plus;1})" title="https://latex.codecogs.com/png.image?\inline \dpi{110}\bg{white} s_{t+1}\sim P_{a_{t}}(s_{t}, s_{t+1})" /> where γ is the discount factor satisfying 0 ≤ γ ≤ 1, which is usually close to 1 (for example, γ = 1/(1+r) for some discount rate r). A lower discount factor motivates the decision maker to favor taking actions early, rather than postpone them indefinitely.
 
+A policy that maximizes the function above is called an optimal policy and is usually denoted π ∗. A particular MDP may have multiple distinct optimal policies. Because of the Markov property, it can be shown that the optimal policy is a function of the current state, as assumed above.
 </div> 
   
 
